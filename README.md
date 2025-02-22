@@ -16,39 +16,39 @@ This course is divided into three main sections:
 
 ## **Table of Contents**
 
-- [Beginner Section](#beginner-section)
-  - [Introduction](#introduction)
-  - [Installation](#installation)
-  - [Deployments](#deployments)
-  - [Monitoring](#monitoring)
-- [Intermediate Section](#intermediate-section)
-  - [Managing Deployments](#managing-deployments)
-  - [Monitoring and Alerts](#monitoring-and-alerts)
-  - [Backup and Restore](#backup-and-restore)
-  - [Security](#security)
-- [Advanced Section](#advanced-section)
-  - [Automation](#automation)
-  - [Advanced Security](#advanced-security)
-  - [API Usage](#api-usage)
-  - [Troubleshooting](#troubleshooting)
-  - [Migrations](#migrations)
-- [Examples](#examples)
-  - [Standalone Deployment](#standalone-deployment)
-  - [Replica Set](#replica-set)
-  - [Sharded Cluster](#sharded-cluster)
-- [Resources](#resources)
-  - [MongoDB Documentation](#mongodb-documentation)
-  - [Third-Party Tools](#third-party-tools)
-  - [Cheatsheets](#cheatsheets)
+- [1. Beginner Section](#1-beginner-section)
+  - [1.1 Introduction](#11-introduction)
+  - [1.2 Installation](#12-installation)
+  - [1.3 Deployments](#13-deployments)
+  - [1.4 Monitoring](#14-monitoring)
+- [2. Intermediate Section](#2-intermediate-section)
+  - [2.1 Managing Deployments](#21-managing-deployments)
+  - [2.2 Monitoring and Alerts](#22-monitoring-and-alerts)
+  - [2.3 Backup and Restore](#23-backup-and-restore)
+  - [2.4 Security](#24-security)
+- [3. Advanced Section](#3-advanced-section)
+  - [3.1 Automation](#31-automation)
+  - [3.2 Advanced Security](#32-advanced-security)
+  - [3.3 API Usage](#33-api-usage)
+  - [3.4 Troubleshooting](#34-troubleshooting)
+  - [3.5 Migrations](#35-migrations)
+- [4. Examples](#4-examples)
+  - [4.1 Standalone Deployment](#41-standalone-deployment)
+  - [4.2 Replica Set](#42-replica-set)
+  - [4.3 Sharded Cluster](#43-sharded-cluster)
+- [5. Resources](#5-resources)
+  - [5.1 MongoDB Documentation](#51-mongodb-documentation)
+  - [5.2 Third-Party Tools](#52-third-party-tools)
+  - [5.3 Cheatsheets](#53-cheatsheets)
 - [Contributing](#contributing)
 - [License](#license)
 - [Connect with Me](#connect-with-me)
 
 ---
 
-## **Beginner Section**
+## **1. Beginner Section**
 
-### **Introduction**
+### **1.1 Introduction**
 MongoDB Ops Manager is a management tool for MongoDB deployments. It provides automation, monitoring, backup, and scaling capabilities.
 
 #### **Architecture**
@@ -60,7 +60,7 @@ MongoDB Ops Manager is a management tool for MongoDB deployments. It provides au
 
 ---
 
-### **Installation**
+### **1.2 Installation**
 #### **Checklist**
 - Ensure your system meets the hardware and software requirements.
 
@@ -78,7 +78,7 @@ MongoDB Ops Manager is a management tool for MongoDB deployments. It provides au
 
 ---
 
-### **Deployments**
+### **1.3 Deployments**
 #### **Provision Servers**
 - Use automation to provision servers for MongoDB deployments.
 
@@ -90,7 +90,7 @@ MongoDB Ops Manager is a management tool for MongoDB deployments. It provides au
 
 ---
 
-### **Monitoring**
+### **1.4 Monitoring**
 #### **View Deployment Metrics**
 - Monitor replica sets and sharded clusters.
 
@@ -99,9 +99,9 @@ MongoDB Ops Manager is a management tool for MongoDB deployments. It provides au
 
 ---
 
-## **Intermediate Section**
+## **2. Intermediate Section**
 
-### **Managing Deployments**
+### **2.1 Managing Deployments**
 #### **View All Clusters**
 - Monitor and manage all clusters from the Ops Manager interface.
 
@@ -116,7 +116,7 @@ MongoDB Ops Manager is a management tool for MongoDB deployments. It provides au
 
 ---
 
-### **Monitoring and Alerts**
+### **2.2 Monitoring and Alerts**
 #### **Analyze Slow Queries**
 - Identify and optimize slow queries.
 
@@ -128,7 +128,7 @@ MongoDB Ops Manager is a management tool for MongoDB deployments. It provides au
 
 ---
 
-### **Backup and Restore**
+### **2.3 Backup and Restore**
 #### **Back Up**
 - Create backups of your MongoDB deployments.
 
@@ -140,7 +140,7 @@ MongoDB Ops Manager is a management tool for MongoDB deployments. It provides au
 
 ---
 
-### **Security**
+### **2.4 Security**
 #### **Configure Firewall**
 - Secure Ops Manager with firewall rules.
 
@@ -149,9 +149,9 @@ MongoDB Ops Manager is a management tool for MongoDB deployments. It provides au
 
 ---
 
-## **Advanced Section**
+## **3. Advanced Section**
 
-### **Automation**
+### **3.1 Automation**
 #### **Deploy Replica Set**
 - Automate replica set deployments.
 
@@ -163,7 +163,7 @@ MongoDB Ops Manager is a management tool for MongoDB deployments. It provides au
 
 ---
 
-### **Advanced Security**
+### **3.2 Advanced Security**
 #### **Configure LDAP/SAML**
 - Integrate Ops Manager with LDAP/SAML for authentication.
 
@@ -175,7 +175,7 @@ MongoDB Ops Manager is a management tool for MongoDB deployments. It provides au
 
 ---
 
-### **API Usage**
+### **3.3 API Usage**
 #### **Overview of Ops Manager API**
 - Learn how to use the Ops Manager API.
 
@@ -184,7 +184,7 @@ MongoDB Ops Manager is a management tool for MongoDB deployments. It provides au
 
 ---
 
-### **Troubleshooting**
+### **3.4 Troubleshooting**
 #### **Authentication Issues**
 - Resolve common authentication problems.
 
@@ -196,7 +196,7 @@ MongoDB Ops Manager is a management tool for MongoDB deployments. It provides au
 
 ---
 
-### **Migrations**
+### **3.5 Migrations**
 #### **Migrate to MongoDB Atlas**
 - Migrate your Ops Manager deployments to MongoDB Atlas.
 
@@ -205,9 +205,9 @@ MongoDB Ops Manager is a management tool for MongoDB deployments. It provides au
 
 ---
 
-## **Examples**
+## **4. Examples**
 
-### **Standalone Deployment**
+### **4.1 Standalone Deployment**
 #### **Steps**
 1. Provision a server.
 2. Deploy a standalone MongoDB instance using Ops Manager.
@@ -215,7 +215,7 @@ MongoDB Ops Manager is a management tool for MongoDB deployments. It provides au
 
 ---
 
-### **Replica Set**
+### **4.2 Replica Set**
 #### **Steps**
 1. Provision three servers.
 2. Deploy a replica set using Ops Manager.
@@ -223,7 +223,7 @@ MongoDB Ops Manager is a management tool for MongoDB deployments. It provides au
 
 ---
 
-### **Sharded Cluster**
+### **4.3 Sharded Cluster**
 #### **Steps**
 1. Provision multiple servers.
 2. Deploy a sharded cluster using Ops Manager.
@@ -231,22 +231,22 @@ MongoDB Ops Manager is a management tool for MongoDB deployments. It provides au
 
 ---
 
-## **Resources**
+## **5. Resources**
 
-### **MongoDB Documentation**
+### **5.1 MongoDB Documentation**
 - [MongoDB Ops Manager Documentation](https://docs.mongodb.com/ops-manager/)
 - [MongoDB University](https://university.mongodb.com/)
 
 ---
 
-### **Third-Party Tools**
+### **5.2 Third-Party Tools**
 - **Slack**: For alert notifications.
 - **PagerDuty**: For incident management.
 - **Prometheus**: For advanced monitoring.
 
 ---
 
-### **Cheatsheets**
+### **5.3 Cheatsheets**
 - **Ops Manager CLI Commands**
 - **MongoDB Query Cheatsheet**
 
