@@ -130,3 +130,38 @@ Backups rely upon the MongoDB version compatibility of your database. For MongoD
 - Backup takes and stores snapshots based on a user-defined snapshot retention policy. Sharded cluster snapshots temporarily stop the balancer. The snapshots then can insert a marker token into all shards and config servers in the cluster. Ops Manager takes a snapshot when the marker tokens appear in the snapshot data.
 
 ---
+
+#### **Snapshot Stores**
+
+How much storage capacity you need depends on both the number of snapshots and the type of snapshot storage you choose. The following table outlines the differences in snapshot stores:
+
+| **Snapshot Store**               | **Description**                                                                 |
+|----------------------------------|---------------------------------------------------------------------------------|
+| MongoDB blockstore               | Only the differences between each successive snapshot are stored. Compression and block-level deduplication reduce the size of snapshot data. |
+| AWS S3-compatible storage bucket | Only the differences between each successive snapshot are stored. Compression and block-level deduplication reduce the size of snapshot data. |
+| S3-compatible storage bucket     | Only the differences between each successive snapshot are stored. Compression and block-level deduplication reduce the size of snapshot data. |
+
+All snapshots represent a full backup. Ops Manager can back up data as a full or incremental backup. Ops Manager requires a full backup:
+- For your first backup.
+- After a snapshot has been deleted.
+- If the blockstore block size has been changed.
+
+Incremental backups reduce network transfer and storage costs.
+
+To learn more about how to configure backups, see [Backup Configuration Options](#).
+
+---
+
+#### **Restore Data**
+
+Backup can restore data from a complete scheduled snapshot or from a selected point between snapshots. You can restore sharded clusters and replica sets from selected points in time.
+
+- When you restore from a snapshot, Ops Manager reads directly from the snapshot storage. You can restore the snapshot:
+  - To another cluster.
+  - To download the snapshot files from an HTTPS link.
+- When you restore from a point in time, Ops Manager does the following:
+  1. Restores a full snapshot from the snapshot storage.
+  2. Applies stored oplogs until it reaches the specified point.
+  3. Delivers the snapshot and oplog updates using the same HTTPS mechanisms.
+
+You can configure how much of the oplog you want to keep per backup. This affects the amount of time a point-in-time restore can cover.
